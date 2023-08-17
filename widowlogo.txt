@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+<title>doc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="center">
+  <div class="line"></div>
+  <div class="line"></div>
+ </div>
+</body>
+</html>
+
+=========================
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height:100vh;
+  background-color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.center {
+  width:25rem;
+  height:25rem;
+  background-color:black;
+  border-radius:50%;
+  //box-shadow: 0 0 0 5rem red;
+  position:relative;
+}
+
+.line {
+  width:0rem;
+  height:0rem;
+  position:absolute;
+  top:0;
+  left:0;
+  border:8rem solid transparent;
+  border-top:8.5rem solid #fff;  
+}
+
+.line:first-child {
+  top:4.5rem;
+  left:4.5rem; 
+  border-top-color:red;
+}
+
+.line:nth-child(2) {
+  left:4.5rem;
+  top:4rem; 
+  border-top-color:red;
+  transform:rotate(180deg);
+}
